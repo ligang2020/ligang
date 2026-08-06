@@ -1,0 +1,113 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00100010000000000000001 /* EbikeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000001 /* EbikeAppApp.swift */; };
+		A00100010000000000000002 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000002 /* APIConfig.swift */; };
+		A00100010000000000000003 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000003 /* Vehicle.swift */; };
+		A00100010000000000000004 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000004 /* AppViewModel.swift */; };
+		A00100010000000000000005 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000005 /* GlassCard.swift */; };
+		A00100010000000000000006 /* VehicleArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000006 /* VehicleArtwork.swift */; };
+		A00100010000000000000007 /* BatteryRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000007 /* BatteryRing.swift */; };
+		A00100010000000000000008 /* MetricCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000008 /* MetricCard.swift */; };
+		A00100010000000000000009 /* ActionTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000009 /* ActionTile.swift */; };
+		A0010001000000000000000A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010001000000000000000A /* ChartView.swift */; };
+		A0010001000000000000000B /* FloatingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010001000000000000000B /* FloatingTabBar.swift */; };
+		A0010001000000000000000C /* MockMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010001000000000000000C /* MockMap.swift */; };
+		A0010001000000000000000D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010001000000000000000D /* ContentView.swift */; };
+		A0010001000000000000000E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010001000000000000000E /* HomeView.swift */; };
+		A0010001000000000000000F /* RideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010001000000000000000F /* RideView.swift */; };
+		A00100010000000000000010 /* RideDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000010 /* RideDetailView.swift */; };
+		A00100010000000000000011 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000011 /* MapView.swift */; };
+		A00100010000000000000012 /* HomeKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000012 /* HomeKitView.swift */; };
+		A00100010000000000000013 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000013 /* ProfileView.swift */; };
+		A00100010000000000000014 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000014 /* SettingsView.swift */; };
+		A00100010000000000000016 /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000017 /* Motion.swift */; };
+		A00100010000000000000017 /* AppSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000018 /* AppSymbols.swift */; };
+		A00100010000000000000018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00100010000000000000019 /* Assets.xcassets */; };
+		A00100010000000000000019 /* ConnectedExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0010001000000000000001A /* ConnectedExperiencesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B00100010000000000000000 /* Aurora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aurora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00100010000000000000001 /* EbikeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbikeAppApp.swift; sourceTree = "<group>"; };
+		B00100010000000000000002 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B00100010000000000000003 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		B00100010000000000000004 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		B00100010000000000000005 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+		B00100010000000000000006 /* VehicleArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleArtwork.swift; sourceTree = "<group>"; };
+		B00100010000000000000007 /* BatteryRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryRing.swift; sourceTree = "<group>"; };
+		B00100010000000000000008 /* MetricCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCard.swift; sourceTree = "<group>"; };
+		B00100010000000000000009 /* ActionTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTile.swift; sourceTree = "<group>"; };
+		B0010001000000000000000A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		B0010001000000000000000B /* FloatingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBar.swift; sourceTree = "<group>"; };
+		B0010001000000000000000C /* MockMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMap.swift; sourceTree = "<group>"; };
+		B0010001000000000000000D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0010001000000000000000E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B0010001000000000000000F /* RideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideView.swift; sourceTree = "<group>"; };
+		B00100010000000000000010 /* RideDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailView.swift; sourceTree = "<group>"; };
+		B00100010000000000000011 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B00100010000000000000012 /* HomeKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitView.swift; sourceTree = "<group>"; };
+		B00100010000000000000013 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B00100010000000000000014 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B00100010000000000000015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00100010000000000000016 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		B00100010000000000000017 /* Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
+		B00100010000000000000018 /* AppSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSymbols.swift; sourceTree = "<group>"; };
+		B00100010000000000000019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0010001000000000000001A /* ConnectedExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedExperiencesView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C00100010000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D00100010000000000000001 = {isa = PBXGroup; children = (D00100010000000000000002, B00100010000000000000016, E00100010000000000000001); sourceTree = "<group>"; };
+		D00100010000000000000002 = {isa = PBXGroup; children = (B00100010000000000000001, D00100010000000000000003, D00100010000000000000004, D00100010000000000000005, D00100010000000000000006, D00100010000000000000007, D00100010000000000000008, D0010001000000000000000A, D0010001000000000000000B, B00100010000000000000019); path = EbikeApp; sourceTree = "<group>"; };
+		D00100010000000000000003 = {isa = PBXGroup; children = (B00100010000000000000002); path = Services; sourceTree = "<group>"; };
+		D00100010000000000000004 = {isa = PBXGroup; children = (B00100010000000000000003); path = Models; sourceTree = "<group>"; };
+		D00100010000000000000005 = {isa = PBXGroup; children = (B00100010000000000000004); path = ViewModels; sourceTree = "<group>"; };
+		D00100010000000000000006 = {isa = PBXGroup; children = (B00100010000000000000005, B00100010000000000000006, B00100010000000000000007, B00100010000000000000008, B00100010000000000000009, B0010001000000000000000A, B0010001000000000000000B, B0010001000000000000000C); path = Components; sourceTree = "<group>"; };
+		D00100010000000000000007 = {isa = PBXGroup; children = (B0010001000000000000000D, B0010001000000000000000E, B0010001000000000000000F, B00100010000000000000010, B00100010000000000000011, B00100010000000000000012, B00100010000000000000013, B00100010000000000000014, B0010001000000000000001A); path = Views; sourceTree = "<group>"; };
+		D00100010000000000000008 = {isa = PBXGroup; children = (B00100010000000000000015); path = Resources; sourceTree = "<group>"; };
+		D00100010000000000000009 = {isa = PBXGroup; children = (B00100010000000000000016); path = Configuration; sourceTree = "<group>"; };
+		D0010001000000000000000A = {isa = PBXGroup; children = (B00100010000000000000017); path = Animations; sourceTree = "<group>"; };
+		D0010001000000000000000B = {isa = PBXGroup; children = (B00100010000000000000018); path = Icons; sourceTree = "<group>"; };
+		E00100010000000000000001 = {isa = PBXGroup; children = (B00100010000000000000000); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F00100010000000000000001 = {isa = PBXNativeTarget; buildConfigurationList = F00100010000000000000003; buildPhases = (F00100010000000000000004, C00100010000000000000001, F00100010000000000000005); buildRules = (); dependencies = (); name = ligang; productName = ligang; productReference = B00100010000000000000000; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F00100010000000000000002 = {isa = PBXProject; attributes = { LastSwiftUpdateCheck = 1620; LastUpgradeCheck = 1620; TargetAttributes = { F00100010000000000000001 = { CreatedOnToolsVersion = 16.2; }; }; }; buildConfigurationList = F00100010000000000000006; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, zh-Hans); mainGroup = D00100010000000000000001; productRefGroup = E00100010000000000000001; projectDirPath = ""; projectRoot = ""; targets = (F00100010000000000000001); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F00100010000000000000005 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00100010000000000000018); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F00100010000000000000004 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00100010000000000000001, A00100010000000000000002, A00100010000000000000003, A00100010000000000000004, A00100010000000000000005, A00100010000000000000006, A00100010000000000000007, A00100010000000000000008, A00100010000000000000009, A0010001000000000000000A, A0010001000000000000000B, A0010001000000000000000C, A0010001000000000000000D, A0010001000000000000000E, A0010001000000000000000F, A00100010000000000000010, A00100010000000000000011, A00100010000000000000012, A00100010000000000000013, A00100010000000000000014, A00100010000000000000016, A00100010000000000000017, A00100010000000000000019); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F00100010000000000000007 = {isa = XCBuildConfiguration; baseConfigurationReference = B00100010000000000000016; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CLANG_ENABLE_MODULES = YES; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = EbikeApp/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.ligang.aurora; PRODUCT_NAME = Aurora; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		F00100010000000000000008 = {isa = XCBuildConfiguration; baseConfigurationReference = B00100010000000000000016; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CLANG_ENABLE_MODULES = YES; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = EbikeApp/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = com.ligang.aurora; PRODUCT_NAME = Aurora; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		F00100010000000000000009 = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; }; name = Debug; };
+		F0010001000000000000000A = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F00100010000000000000003 = {isa = XCConfigurationList; buildConfigurations = (F00100010000000000000007, F00100010000000000000008); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		F00100010000000000000006 = {isa = XCConfigurationList; buildConfigurations = (F00100010000000000000009, F0010001000000000000000A); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = F00100010000000000000002;
+}

@@ -1,0 +1,46 @@
+name: Build iOS IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create private build configuration
+        env:
+          APP_BEARER_TOKEN: ${{ secrets.APP_BEARER_TOKEN }}
+        run: |
+          printf 'API_BASE_URL = https:/$()/9hao.ligangs2025.top:16689\n' > Config.xcconfig
+          printf 'APP_BEARER_TOKEN = %s\n' "$APP_BEARER_TOKEN" >> Config.xcconfig
+
+      - name: Archive without signing
+        run: |
+          xcodebuild archive \
+            -project ligang.xcodeproj \
+            -scheme ligang \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$RUNNER_TEMP/ligang.xcarchive" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO
+
+      - name: Package IPA
+        run: |
+          mkdir -p "$RUNNER_TEMP/Payload"
+          cp -R "$RUNNER_TEMP/ligang.xcarchive/Products/Applications/Aurora.app" "$RUNNER_TEMP/Payload/"
+          cd "$RUNNER_TEMP"
+          zip -qry ligang-unsigned.ipa Payload
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ligang-ios-unsigned
+          path: ${{ runner.temp }}/ligang-unsigned.ipa
+          if-no-files-found: error

@@ -26,7 +26,7 @@ private struct LiveActivityGallery: View {
                 VStack(spacing: 8) {
                     Text("Dynamic Island").font(.headline).frame(maxWidth: .infinity, alignment: .leading)
                     HStack(spacing: 12) {
-                        Image(systemName: mode == "充电" ? "bolt.fill" : mode == "锁车" ? "lock.fill" : "figure.outdoor.cycle").foregroundStyle(mode == "充电" ? .green : .blue)
+                        Image(systemName: mode == "充电" ? "bolt.fill" : mode == "锁车" ? "lock.fill" : "figure.outdoor.cycle").foregroundStyle(mode == "充电" ? Color.green : Color.blue)
                         Text("Aurora").font(.caption.bold()); Spacer()
                         Text(mode == "骑行" ? "24 km/h" : mode == "充电" ? "86%" : "已锁定").font(.caption.bold().monospacedDigit())
                     }.padding(.horizontal, 16).frame(height: 38).background(Color.black, in: Capsule()).foregroundStyle(.white)
@@ -41,7 +41,7 @@ private struct LiveActivityGallery: View {
             HStack { Label("AURORA", systemImage: "bicycle").font(.caption.bold()); Spacer(); Text(mode == "骑行" ? "骑行中" : mode == "充电" ? "正在充电" : "车辆安全").font(.caption).foregroundStyle(.secondary) }
             HStack(alignment: .bottom) {
                 VStack(alignment: .leading, spacing: 2) { Text(mode == "骑行" ? "24" : mode == "充电" ? "86" : "68").font(.system(size: 38, weight: .bold, design: .rounded)); Text(mode == "骑行" ? "km/h" : mode == "充电" ? "% 电量" : "km 剩余续航").font(.caption).foregroundStyle(.secondary) }
-                Spacer(); Image(systemName: mode == "锁车" ? "lock.shield.fill" : mode == "充电" ? "battery.75percent" : "location.north.line.fill").font(.system(size: 32)).foregroundStyle(mode == "充电" ? .green : .blue)
+                Spacer(); Image(systemName: mode == "锁车" ? "lock.shield.fill" : mode == "充电" ? "battery.75percent" : "location.north.line.fill").font(.system(size: 32)).foregroundStyle(mode == "充电" ? Color.green : Color.blue)
             }
             ProgressView(value: mode == "充电" ? 0.86 : 0.62).tint(mode == "充电" ? .green : .blue)
             HStack { Text(mode == "充电" ? "预计 42 分钟充满" : "徐汇滨江 · 12.8 km"); Spacer(); Text("52.4 V") }.font(.caption).foregroundStyle(.secondary)

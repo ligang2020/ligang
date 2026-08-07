@@ -14,4 +14,4 @@
 
 工作流会构建无签名 IPA 并上传为 Artifact。若要生成可安装或发布的 IPA，需要在仓库 Secrets 中配置 Apple Developer 证书、Provisioning Profile 与签名参数。
 
-后端 Token 不会提交到仓库。在 GitHub 仓库中创建名为 `APP_BEARER_TOKEN` 的 Actions Secret，工作流会在构建时注入。
+后端 Token 不会提交到仓库，也不会写入公开 IPA。发布构建使用空 Token；本地运行时由 `Config.xcconfig` 注入。生产版本应在用户登录后从服务端获取短期凭据并存入 Keychain。

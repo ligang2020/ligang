@@ -8,6 +8,8 @@
     <string>$(APP_BEARER_TOKEN)</string>
     <key>CFBundleDisplayName</key>
     <string>Aurora</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
     <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
     <key>CFBundleInfoDictionaryVersion</key>

@@ -14,12 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create private build configuration
-        env:
-          APP_BEARER_TOKEN: ${{ secrets.APP_BEARER_TOKEN }}
+      - name: Create public build configuration
         run: |
           printf 'API_BASE_URL = https:/$()/9hao.ligangs2025.top:16689\n' > Config.xcconfig
-          printf 'APP_BEARER_TOKEN = %s\n' "$APP_BEARER_TOKEN" >> Config.xcconfig
+          printf 'APP_BEARER_TOKEN =\n' >> Config.xcconfig
 
       - name: Archive without signing
         run: |

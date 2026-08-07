@@ -17,5 +17,5 @@ struct SettingsView: View {
         }.listStyle(.insetGrouped).navigationTitle("设置").navigationBarTitleDisplayMode(.inline).preferredColorScheme(darkMode ? .dark : nil) }
     }
     private func settingToggle(_ icon: String, _ title: String, _ value: Binding<Bool>) -> some View { HStack { Image(systemName: icon).foregroundStyle(.blue).frame(width: 24); Text(title); Spacer(); Toggle("", isOn: value).labelsHidden() } }
-    private func settingRow(_ icon: String, _ title: String, _ detail: String, _ action: @escaping () -> Void) -> some View { Button(action: action) { HStack { Image(systemName: icon).foregroundStyle(.blue).frame(width: 24); Text(title); Spacer(); Text(detail).font(.subheadline).foregroundStyle(.secondary); Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary) } }.buttonStyle(.plain) }
+    private func settingRow(_ icon: String, _ title: String, _ detail: String, _ action: @escaping () -> Void = {}) -> some View { Button(action: action) { HStack { Image(systemName: icon).foregroundStyle(.blue).frame(width: 24); Text(title); Spacer(); Text(detail).font(.subheadline).foregroundStyle(.secondary); Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary) } }.buttonStyle(.plain) }
 }

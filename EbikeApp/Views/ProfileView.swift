@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @ObservedObject var model: AppViewModel
+    @EnvironmentObject private var connection: ConnectionViewModel
     @State private var showSettings = false
     @State private var showConnected = false
     var body: some View {
@@ -11,7 +12,7 @@ struct ProfileView: View {
                 Section("车辆与家庭") { row("bicycle", "车辆管理", "Aurora S1") { model.perform("车辆管理") }; row("person.2.fill", "家庭成员", "3 位成员") {} }
                 Section("服务") { row("bell.badge.fill", "通知", "已开启") {}; row("lock.shield.fill", "隐私", "") {}; row("arrow.down.circle.fill", "OTA 升级", "已是最新") {}; row("waveform.path.ecg", "日志与诊断", "") {}; row("flask.fill", "实验室", "Beta") { showConnected = true } }
                 Section("关于") { row("info.circle.fill", "关于 Aurora", "v1.0.0") {}; row("questionmark.circle.fill", "支持", "") {} }
-                Section { Button(role: .destructive) { model.perform("已退出登录") } label: { HStack { Spacer(); Text("退出登录"); Spacer() } } }.listRowBackground(Color.clear)
+                Section { Button(role: .destructive) { connection.disconnect() } label: { HStack { Spacer(); Text("退出登录"); Spacer() } } }.listRowBackground(Color.clear)
             }.listStyle(.insetGrouped).scrollContentBackground(.hidden).background(Color(uiColor: .systemGroupedBackground)).navigationTitle("我的").navigationBarTitleDisplayMode(.large)
                 .toolbar { ToolbarItem(placement: .topBarTrailing) { Button { showSettings = true } label: { Image(systemName: "gearshape.fill") } } }
                 .sheet(isPresented: $showSettings) { SettingsView(model: model) }

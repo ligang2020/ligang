@@ -2,7 +2,9 @@ import SwiftUI
 
 @main
 struct EbikeAppApp: App {
+    @StateObject private var connection = ConnectionViewModel()
+
     var body: some Scene {
-        WindowGroup { ContentView() }
+        WindowGroup { RootView().environmentObject(connection) }
     }
 }
